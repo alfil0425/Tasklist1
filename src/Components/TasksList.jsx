@@ -24,7 +24,7 @@ const TasksLists = ({ tasks, setTasks, setEditTasks }) => {
         setTasks(tasks.filter((task) => task.id !== id))
     }
     return (
-        <div>
+        <div className="task-list">
             {tasks.map((task) => (
                 <li className="list-item" key={task.id}>
                     <input

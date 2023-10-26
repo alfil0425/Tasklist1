@@ -1,58 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Roboto+Slab:wght@400;500&display=swap');
+/* App.css */
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Cursive", 'Roboto Slab', serif;
-
+  font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
 }
 
 body {
   background-image: url(./img/escalera-madera-al-amanecer-al-estilo-paisajes-tropicales_916626-8049.avif);
   background-size: cover;
-
-
-
-}
-
-.container {
-  background-color: linear-gradient(to rigth bottom, #e1b382, #c89666);
-  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
-.app-wrapper {
-  background-color: rgba(0, 0, 0, 0.5);
-  min-width: 450px;
-  min-height: 650px;
-  padding: 30px;
-  box-sizing: border-box;
+.container {
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 3px 6px 40px black;
-  margin-bottom: 10px
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90%;
+  max-width: 400px; 
+  min-height: 80vh; 
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .header h1 {
   color: whitesmoke;
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0; 
+  font-size: 24px; 
 }
 
 .footer h5 {
   color: whitesmoke;
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0; 
+  font-size: 16px; /
 }
 
 .task-input {
   outline: none;
-  width: 260px;
+  width: 100%; 
   padding: 15px;
-  margin-right: 25px;
-  font-size: 20px;
+  margin: 10px 0; 
+  font-size: 16px; 
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 10px;
+}
+
+.task-description {
+  outline: none;
+  width: 100%; 
+  padding: 10px;
+  margin: 10px 0; 
+  font-size: 16px; 
   color: black;
   background-color: white;
   border: 1px solid rgb(255, 0, 0);
@@ -60,50 +72,61 @@ body {
 }
 
 .button-add {
-  width: 70px;
-  padding: 15px 15px;
-  font-size: 20px;
+  width: 100%; 
+  padding: 15px;
+  margin: 10px 0; 
+  font-size: 18px; 
   border-radius: 10px;
   border: 0;
-  background-color: rgb(248, 247, 253);
+  background-color: rgb(130, 119, 195);
+  color: white; 
   cursor: pointer;
+  transition: background-color 0.3s; 
 }
 
 .button-add:hover {
-  opacity: .8;
+  background-color: rgb(105, 97, 159); 
+  opacity: 0.8;
+}
 
-
+.task-list {
+  max-height: 300px; 
+  overflow-y: auto; 
+  flex-grow: 1; 
 }
 
 .list-item {
   display: flex;
-  margin: 20px 0;
+  align-items: center;
+  justify-content: space-between; 
+  margin: 10px 0; 
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 10px;
-  max-height: 30px;
+  min-height: 50px; 
+  background-color: white; 
+  color: black; 
 }
 
 .button-complete,
-.button-delete,
-.button-edit {
+.button-edit,
+.button-delete {
   border: none;
   outline: none;
   cursor: pointer;
   background-color: transparent;
-  opacity: .8;
-  font-size: 28px;
+  opacity: 0.8;
+  font-size: 24px; 
   border-radius: 50%;
+  margin: 0 5px; 
 }
 
 .button-complete {
   color: rgb(8, 167, 8);
-  margin-right: 10px;
 }
 
 .button-edit {
   color: coral;
-  margin-right: 10px;
 }
 
 .button-delete {
@@ -118,16 +141,10 @@ body {
 }
 
 .list {
-  width: 220px;
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 20px;
+  width: 70%; 
+  font-size: 18px; 
   padding-left: 10px;
-  margin-left: 15px;
+  color: black; 
 }
 
-input:focus,
-button:focus {
-  outline: none;
-}
+
