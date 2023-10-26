@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Roboto+Slab:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cursive", 'Roboto Slab', serif;
+
+}
+
+body {
+  background-image: url(./img/escalera-madera-al-amanecer-al-estilo-paisajes-tropicales_916626-8049.avif);
+  background-size: cover;
+
+
+
+}
+
+.container {
+  background-color: linear-gradient(to rigth bottom, #e1b382, #c89666);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 450px;
+  min-height: 650px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px black;
+  margin-bottom: 10px
+}
+
+.header h1 {
+  color: whitesmoke;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.footer h5 {
+  color: whitesmoke;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 10px;
+}
+
+.button-add {
+  width: 70px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(248, 247, 253);
+  cursor: pointer;
+}
+
+.button-add:hover {
+  opacity: .8;
+
+
+}
+
+.list-item {
+  display: flex;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: .8;
+  font-size: 28px;
+  border-radius: 50%;
+}
+
+.button-complete {
+  color: rgb(8, 167, 8);
+  margin-right: 10px;
+}
+
+.button-edit {
+  color: coral;
+  margin-right: 10px;
+}
+
+.button-delete {
+  color: red;
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #ff6c6c;
+  opacity: 0.6;
+}
+
+.list {
+  width: 220px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-left: 15px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
